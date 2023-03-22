@@ -25,13 +25,12 @@ body{
 }
 
 .centrale{
-    
     width: 85%;
     background-color: #141922;
     z-index: 1;
-    padding-top: 6rem;
-    overflow: scroll;
-   
+    padding-top: 7rem;
+    padding-inline: 1rem;
+    overflow: scroll;  
 }
 
 .upgrade{
@@ -72,7 +71,54 @@ body{
     padding-right: 1rem;
 }
 
-/*Section Recently Played*/
+/* Stile Sezioni*/
+.sections{
+    width: 100%;
+    background-color: pink;
+    border: 3px solid red;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.sections .title{
+    line-height: 1.5rem;
+    padding: .5rem;
+}
 h1{
     color: white;
+}
+p{
+    color: #63666B;
+    font-size: .8rem;
+}
+.container-cards{
+    width: 100%;
+    display: flex;
+    gap: .5rem;
+}
+
+.card{
+    width:  calc((100%-(6*.5rem))/6);
+    background-color: coral;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.card img{
+    display: block;
+    width: 100%;
+   
+}
+.card .subtitle{
+    text-align: center;
+    width: 100%;
+    
+}
+.card .subtitle h3{
+    color: white;
+    font-size: .7rem;
+}
+.card .subtitle h4{
+    color: #63666B;
+    font-size: .6rem;
 }

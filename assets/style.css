@@ -3,3 +3,40 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    height: 100vh;   
+}
+
+.contenitore-giallo-rosso{
+    display: flex;
+    width: 100%;
+}
+
+.giallo{
+    height:1010px;
+    width: 15%;
+    background-color: yellow;
+}
+.rosso{
+    height:1010px;
+    width: 85%;
+    background-color: red;
+
+   
+}
+.upgrade{
+    height: 90px;
+    background-color: black;
+  
+}
+.player{
+    height: 90px;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    background-color: black;  
+    
+}

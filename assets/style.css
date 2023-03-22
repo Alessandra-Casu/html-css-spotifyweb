@@ -1,8 +1,11 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    
+    box-sizing: border-box; 
+}
+
+html{
+    font-family: 'Roboto', sans-serif;
 }
 
 body{
@@ -11,32 +14,35 @@ body{
 }
 
 .contenitore-giallo-rosso{
+    height: 1010vh;
     display: flex;
     width: 100%;
 }
 
 .giallo{
-    height:1010px;
     width: 15%;
     background-color: yellow;
 }
-.rosso{
-    height:1010px;
+
+.centrale{
+    
     width: 85%;
-    background-color: red;
+    background-color: #141922;
     z-index: 1;
     padding-top: 6rem;
     overflow: scroll;
    
 }
+
 .upgrade{
     height: 90px;
     background-color: rgba(0, 0, 0, 0.8);
     position: fixed;
     left: 15%;
     right: 0px;
-    z-index: 3;
+    z-index: 2;
 }
+
 .player{
     height: 90px;
     width: 100%;
@@ -46,4 +52,27 @@ body{
     left: 0px;
     background-color: black;  
     z-index: 2;
+}
+
+
+/*Contenitore centrale (ex rosso)*/
+
+/*NAV_BAR*/
+.nav-bar{
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+    list-style: none;
+    
+}
+.nav-bar a{
+    color: #63666B;
+    text-decoration: none;
+    font-weight: 900;
+    padding-right: 1rem;
+}
+
+/*Section Recently Played*/
+h1{
+    color: white;
 }

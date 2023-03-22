@@ -25,12 +25,13 @@ body{
 }
 
 .centrale{
+    overflow-y: scroll;
     width: 85%;
     background-color: #141922;
     z-index: 1;
     padding-top: 7rem;
     padding-inline: 1rem;
-    overflow: scroll;  
+    
 }
 
 .upgrade{
@@ -50,7 +51,7 @@ body{
     right: 0px;
     left: 0px;
     background-color: black;  
-    z-index: 2;
+    z-index: 3;
 }
 
 

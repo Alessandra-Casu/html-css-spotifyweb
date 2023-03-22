@@ -25,13 +25,13 @@ body{
 }
 
 .centrale{
-    overflow-y: scroll;
     width: 85%;
+    height: calc(100vh - 90px);
     background-color: #141922;
-    z-index: 1;
     padding-top: 7rem;
     padding-inline: 1rem;
-    
+    overflow-y: scroll;
+    z-index: 1;
 }
 
 .upgrade{
@@ -98,7 +98,7 @@ p{
 }
 
 .card{
-    width:  calc((100%-(6*.5rem))/6);
+    width:  calc(100%-(6*.5rem)/6);
     background-color: coral;
     display: flex;
     flex-direction: column;

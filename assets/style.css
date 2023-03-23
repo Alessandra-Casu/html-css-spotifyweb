@@ -20,22 +20,26 @@ body{
 }
 
 .side-bar{
-    width: 210px;
+    width: 15%;
     background-color: black;
     padding: .3rem;
     z-index: 5;
 }
-
+/*prova container riga*/
+.row-container{
+    display: flex;
+    width: 80%;
+    height: 20%;
+    align-content: center; 
+}
 .side-bar ul{
-    list-style: none;
-    
+    list-style: none;  
 }
  a{
     text-decoration: none;
     color: #63666B;
     line-height: 2rem;
     white-space: nowrap;
-   
 }
 .logoimg{
     width: 60%;
@@ -56,7 +60,7 @@ body{
 }
 
 .centrale{
-    width: calc(100%-210px);
+    width: 85%;
     height: calc(100vh - 90px);
     background-color: #141922;
     padding-top: 7rem;
@@ -124,7 +128,7 @@ p{
 }
 .container-cards{
     display: flex;
-    flex-basis: 0 1 100%;
+    width:100%;
     flex-wrap: wrap;
     border: 3px solid green;
     gap: 1rem;
@@ -133,24 +137,19 @@ p{
 
 
 .card{
-    flex-basis: 0 1 calc((100% - 5 * 1rem) / 6) ;
+    width:calc((100% - 5 * 1rem) / 6) ;
     border: 3px solid yellow;
     background-color: coral;
 }
-.card .img-card{
-    max-width: 100%;  
-}
+
+    
 .img-card img{
-    display: inline-block;
-    width: 142px;
-    height: 142px;
+   width: 100%;
    
 }
 
 .subtitle{
-    width: 130px; 
-    text-align: center;
-       
+    text-align: center;     
 }
 
 
@@ -165,7 +164,12 @@ p{
 
 /*side-bar solo da 600px in giù*/
 .list-mobile{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between ;
+    align-items: center;
     width: 100%;
+    height: 100%;
     padding: .5rem;
 }
 .list-mobile  img{
@@ -173,7 +177,34 @@ p{
     width: 20px;
     padding-bottom: .5rem;
 }
+.img-profile{
+    color: white;
+    background-color: #63666B;
+    width: 25px;
+    height: 25px;
+    border: .5px solid white;
+    border-radius: 20px;
+    object-fit: cover;
+   
+}
+.img-profile img{
+    width: 75%;
+    display: block;
+    padding-left: .3rem;
+    padding-top: .2rem;
 
+}
+.arrow-circle{
+    color: white;
+    font-size: small;
+    font-weight: 0;
+    padding-left: .4rem;
+}
+
+
+
+
+/*media query*/
 @media screen and (max-width: 600px ) {
     .list-dek{
         display: none;

@@ -32,16 +32,22 @@
                             <img src="img/logo.svg" alt="">
                         </div>
                     </li>    
-                    <li class="space-title "><a class="title-list"  href="#">
-                        <img src="img/home.svg" alt="">
-                        Home</a>
+                    <li class="space-title">
+                        <div class="row-container">
+                            <a class="title-list"  href="#">
+                           <img src="img/home.svg" alt="">
+                             Home</a>
+                        </div>
+                        
                         <ul>
-                            <li><a href="#">
-                                <img src="img/search.svg" alt="">
-                                Cerca</a></li>
-                            <li><a href="#">
-                                <img src="img/libreria.svg" alt="">
-                                La tua libreria</a></li>
+                            <li class="row-container">
+                                <a href="#"><img src="img/search.svg" alt=""></a>
+                                <div class="scritta"> <a href="#"> Cerca</a></div> 
+                            </li>
+                            <li class="row-container" >
+                                <a href="#"><img src="img/libreria.svg" alt=""></a>
+                                <div class="scritta"> <a href="#"> La tua libreria</a></div> 
+                            </li>
                         </ul>
                     </li>
                     <li class="space-title"><a  class="title-list" href="#">
@@ -49,9 +55,12 @@
                         
                         Playlist</a>
                             <ul>
-                                <li><a href="#">
+                                <li class="row-container">
+                                    <a href="#">
                                     <i class="fa-solid fa-square-plus plus"></i>
-                                    Crea Playlist</a></li>
+                                    </a>
+                                    <div class="scritta"><a href="#">Crea Playlist</a> </div>
+                                </li>
                                 <li><a href="#">Nome Playlist</a></li>
                                 <li><a href="#">Nome Playlist</a></li>
                                 <li><a href="#">Nome Playlist</a></li>
@@ -65,11 +74,38 @@
                     </li>
                 </ul>
                 <ul class="list-mobile">
-                    <li><img src="img/logo-small.svg" alt=""> </li>  
-                    <li><img src="img/home.svg" alt=""></li>
-                    <li> <img src="img/search.svg" alt=""></li>
-                    <li> <img src="img/libreria.svg" alt=""></li>
+                    <li>
+                        <ul>
+                            <li>
+                                 <a href="#"><img src="img/logo-small.svg"        alt=""></a> 
+                            </li>  
+                             <li>
+                                <a href="#"><img src="img/home.svg" alt=""></a> 
+                            </li>
+                             <li>
+                                <a href="#"><img src="img/search.svg" alt=""></a>
+                            </li>
+                             <li>
+                                 <a href="#"><img src="img/libreria.svg" alt="">
+                                 </a>
+                             </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <ul >
+                                <li>
+                                    <a href="#"> <i class="fa-regular fa-circle-down arrow-circle"></i></a>
+                                </li>
+                                <li>
+                                     <div class="img-profile">
+                                          <img src="img/profile.svg" alt="">
+                                    </div>
+                                 </li>
+                         </ul>
+                    </li>
                 </ul>
+                
             </div>
             <!--Contenitore centrale (ex-rosso)-->
             <div class="centrale">

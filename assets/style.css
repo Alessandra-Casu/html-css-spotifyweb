@@ -29,7 +29,7 @@ body{
 .row-container{
     display: flex;
     width: 80%;
-    height: 20%;
+    flex-shrink: 1;
     align-content: center; 
 }
 .side-bar ul{
@@ -39,7 +39,7 @@ body{
     text-decoration: none;
     color: #63666B;
     line-height: 2rem;
-    white-space: nowrap;
+    
 }
 .logoimg{
     width: 60%;
@@ -141,11 +141,13 @@ p{
     border: 3px solid yellow;
     background-color: coral;
 }
-
+.circle-card img{
+    border-radius: 100px;
+    object-fit: contain;
+}
     
 .img-card img{
    width: 100%;
-   
 }
 
 .subtitle{
@@ -222,3 +224,29 @@ p{
     }
     
 }
+@media screen and (min-width: 1101){
+    .card{
+        width:calc((100% - 5 * 1rem) / 6) ;
+        flex-wrap: wrap;
+    }
+
+}
+
+
+@media screen  and (max-width: 1100px) {
+    .card{
+        width:calc((100% - 3 * 1rem) / 4) ;
+        flex-wrap: wrap;
+    }
+    
+}
+@media screen  and (max-width: 700px) {
+    .card{
+        width:calc((100% - 1 * 1rem) / 2) ;
+        flex-wrap: wrap;
+    }
+    
+}
+
+
+

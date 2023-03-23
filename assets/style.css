@@ -26,7 +26,7 @@ body{
 
 .centrale{
     width: 85%;
-    height: calc(100vh - 90px);
+    height: calc(100vh - 5rem);
     background-color: #141922;
     padding-top: 7rem;
     padding-inline: 1rem;
@@ -35,7 +35,7 @@ body{
 }
 
 .upgrade{
-    height: 90px;
+    height:5rem ;
     background-color: rgba(0, 0, 0, 0.8);
     position: fixed;
     left: 15%;
@@ -44,7 +44,7 @@ body{
 }
 
 .player{
-    height: 90px;
+    height: 5rem;
     width: 100%;
     position: fixed;
     bottom: 0px;
@@ -74,7 +74,7 @@ body{
 
 /* Stile Sezioni*/
 .sections{
-    width: 100%;
+    max-width: 100%;
     background-color: pink;
     border: 3px solid red;
     margin-top: 2rem;
@@ -92,27 +92,34 @@ p{
     font-size: .8rem;
 }
 .container-cards{
-    width: 100%;
     display: flex;
-    gap: .5rem;
+    border: 3px solid green;
+    gap: 1rem;
+    padding: .5rem;
 }
 
+
 .card{
-    width:  calc(100%-(6*.5rem)/6);
     background-color: coral;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
+    width:calc((100% - 5 * 1rem)/6);
+    border: 3px solid yellow;
+   
 }
-.card img{
-    display: block;
+.img-card{
     width: 100%;
    
 }
+.img-card img{
+    display: block;
+    width: 5.5rem;
+    height: 5.5rem;
+    background-size: cover;
+    
+    
+}
 .card .subtitle{
-    text-align: center;
-    width: 100%;
+   text-align: center;
+  
     
 }
 .card .subtitle h3{
@@ -123,3 +130,4 @@ p{
     color: #63666B;
     font-size: .6rem;
 }
+

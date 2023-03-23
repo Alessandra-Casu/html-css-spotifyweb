@@ -9,19 +9,62 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <title>Spotify</title>
 </head>
 <body>
-    <!--Header composto solo da nav-bar-->
-    <header></header>
+    
+    <header>
+        <div class="upgrade"></div>
+    </header>
     <!--main-->
     <main>
-        <div class="upgrade"></div>
+        
 
         
         <div class="contenitore-giallo-rosso">
-            <div class="giallo"></div>
+            <!--Side-bar-->
+            <div class="side-bar">
+                <ul class="list-dek">
+                    <li>
+                        <div class="logoimg">
+                            <img src="img/logo.svg" alt="">
+                        </div>
+                    </li>    
+                    <li class="space-title "><a class="title-list"  href="#">
+                        <img src="img/home.svg" alt="">
+                        Home</a>
+                        <ul>
+                            <li><a href="#">
+                                <img src="img/search.svg" alt="">
+                                Cerca</a></li>
+                            <li><a href="#">
+                                <img src="img/libreria.svg" alt="">
+                                La tua libreria</a></li>
+                        </ul>
+                    </li>
+                    <li class="space-title"><a  class="title-list" href="#">
+                        <!--mettere il più-->
+                        
+                        Playlist</a>
+                            <ul>
+                                <li><a href="#">
+                                    <i class="fa-solid fa-square-plus plus"></i>
+                                    Crea Playlist</a></li>
+                                <li><a href="#">Nome Playlist</a></li>
+                                <li><a href="#">Nome Playlist</a></li>
+                                <li><a href="#">Nome Playlist</a></li>
+                                <li><a href="#">Nome Playlist</a></li>
+                                <li><a href="#">Nome Playlist</a></li>
+                                <li><a href="#">Nome Playlist</a></li>
+
+
+
+                            </ul>
+                    </li>
+                </ul>
+            </div>
             <!--Contenitore centrale (ex-rosso)-->
             <div class="centrale">
                 <!--nav-bar-->
@@ -166,6 +209,8 @@
 
 
         <div class="player"></div>
+
+        
         
     </main>
     

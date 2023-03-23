@@ -17,11 +17,10 @@ body{
     height: calc(100vh-90px);
     display: flex;
     flex-shrink: 1;
-    width: 100%;
 }
 
 .side-bar{
-    max-width: 15%;
+    width: 210px;
     background-color: black;
     padding: .3rem;
     z-index: 5;
@@ -57,7 +56,7 @@ body{
 }
 
 .centrale{
-    width: 85%;
+    width: calc(100%-210px);
     height: calc(100vh - 90px);
     background-color: #141922;
     padding-top: 7rem;
@@ -164,11 +163,30 @@ p{
     font-size: .6rem;
 }
 
-
-
+/*side-bar solo da 600px in giù*/
+.list-mobile{
+    width: 100%;
+    padding: .5rem;
+}
+.list-mobile  img{
+    display: block;
+    width: 20px;
+    padding-bottom: .5rem;
+}
 
 @media screen and (max-width: 600px ) {
     .list-dek{
+        display: none;
+    }
+    .side-bar{
+        width: 40px;
+    }
+    
+}
+
+
+@media screen and (min-width: 601px ) {
+    .list-mobile{
         display: none;
     }
     
